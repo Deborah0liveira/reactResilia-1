@@ -1,0 +1,14 @@
+
+body {
+  background: url(./../../Assets/mainBackground.jpg)center center fixed;
+}
+
+.hTitle {
+  margin: 50px 0 0 30px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  color: #ffffff;
+  animation: zoomIn;
+  animation-duration: 3s;
+}

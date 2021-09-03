@@ -1,0 +1,29 @@
+.nav-header {
+  height: 150px;
+  background: #301d0f79;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.liItem {
+  list-style: none;
+}
+
+.hItem {
+  padding: 0 30px 2px;
+  text-decoration: none;
+  color: #dbbf6a;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.hItem:hover,
+.hItem:active {
+  color: #ffffff;
+  border-bottom: #301d0f solid 3px;
+  animation: pulse;
+  animation-duration: 3s;
+}
