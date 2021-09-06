@@ -8,11 +8,14 @@ import VerClientes from "./Components/Clientes/VerClientes";
 import Fornecedores from "./Components/Fornecedores/Fornecedores";
 import Pedidos from "./Components/Pedidos/Pedidos";
 import Produtos from "./Components/Produtos/Produtos";
-import Funcionarios from "./Components/Funcionarios/Funcionarios";
+import NossoTime from "./Components/NossoTime/NossoTime";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import GetPedidos from "./Components/Pedidos/GetPedidos";
+import PostPedidos from "./Components/Pedidos/PostPedidos"
+
 function App() {
   return (
-    <div classNames="App">
+    <div className="App">
       <Router>
         <Header />
         <Switch>
@@ -31,13 +34,19 @@ function App() {
           <Route path="/pedidos" exact>
             <Pedidos />
           </Route>
+          <Route path="/verpedidos" exact>
+            <GetPedidos />
+          </Route>
+          <Route path="/fazerpedido" exact>
+            <PostPedidos />
+          </Route>
           <Route path="/produtos" exact>
             <Produtos />
           </Route>
-          <Route path="/funcionarios" exact>
-            <Funcionarios />
+          <Route path="/nossotime" exact>
+            <NossoTime />
           </Route>
-          <Route exact path="/">
+          <Route path="/" exact>
             <Home />
           </Route>
         </Switch>
