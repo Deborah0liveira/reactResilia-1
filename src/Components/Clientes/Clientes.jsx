@@ -7,17 +7,18 @@ import AdicionarClientes from './AdicionarClientes';
 export default function Clientes() {
     
    const [users,setUsers]= useState([])
+
     const rotaGet = () =>{
        
         
-        fetch('https://frozen-oasis-95921.herokuapp.com/Clientes')
+        fetch('https://hamburgueria-resilia.herokuapp.com/cliente')
             .then((res) => res.json())
             .then((data) => setUsers(data))
 
     } 
+
     useEffect(()=>{
         rotaGet()
-
     },[])
     
    
