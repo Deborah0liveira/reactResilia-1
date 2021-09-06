@@ -7,7 +7,7 @@ export default function AtualizarProdutos() {
 
     const handleSubmit = () => {
         const prod = { ID_produto }
-        const midProduto = (axios.delete('https://hamburgueria-resilia.herokuapp.com/produto', prod))
+        axios.delete('https://hamburgueria-resilia.herokuapp.com/produto', prod)
     }
 
     const prodHandler = (event) => {

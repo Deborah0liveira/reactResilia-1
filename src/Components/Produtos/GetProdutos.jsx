@@ -20,6 +20,7 @@ export default function GetProdutos() {
             <div className="prodMain">
                 {produto.length?produto.map(el=>
                     <div className="prodModal">
+                        <p>ID: {el.ID_produto}</p>
                         <p>Descrição: {el.descricao}</p>
                         <p>Preço: {el.preco}</p>
                         <p>Quantidade: {el.quantidade}</p>
