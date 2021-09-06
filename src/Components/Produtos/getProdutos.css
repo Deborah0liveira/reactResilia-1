@@ -1,0 +1,18 @@
+.prodModal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100vw;
+}
+
+.prodModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 235, 205, 0.384);
+
+    margin:3px solid black;
+
+    width: 25%;
+}
